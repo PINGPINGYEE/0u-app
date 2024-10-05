@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+/* src/App.css */
+body {
+  font-family: 'Sunflower', sans-serif;
+}
+
+/* 추가로 다른 요소들도 스타일링 */
+h1, h2, h3, h4, h5, h6, p, a, li, button {
+  font-family: 'Sunflower', sans-serif;
+}
