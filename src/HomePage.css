@@ -11,11 +11,33 @@
   color: white;
   text-align: center;
   font-family: 'Sunflower', sans-serif;
-  padding-top: 20px; /* 헤더와의 간격 줄이기 */
+  padding-top: 20px;
+}
+
+.intro-banner {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.tree-icon {
+  font-size: 3rem; /* 아이콘 크기 설정 */
+  color: #28844F; /* 아이콘 색상 설정 */
+}
+
+.intro-description {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.highlight {
+  color: #32CD32; /* 거래량 강조 색상을 밝은 초록색으로 설정 */
 }
 
 .search-section {
-  margin-bottom: 20px; /* 검색창 아래에 여백 추가 */
+  margin-top: 40px; /* 검색창 아래 여백 */
   display: flex;
   align-items: center;
   gap: 10px;
@@ -31,7 +53,7 @@
 
 .search-button {
   padding: 10px 20px;
-  background-color: #87ceeb; /* 스카이블루 색상 */
+  background-color: #28844F; /* 변경된 색상 */
   color: white;
   border: none;
   border-radius: 5px;
@@ -41,12 +63,5 @@
 }
 
 .search-button:hover {
-  background-color: #00bfff; /* 더 진한 스카이블루 */
-}
-
-.hero-section {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 30px;
-  border-radius: 10px;
-  margin-top: 20px; /* 검색창과 배너 간의 간격 */
+  background-color: #1e683b; /* 더 진한 색상 */
 }

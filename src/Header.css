@@ -1,8 +1,8 @@
 /* Header.css */
 
 .header {
-  background-color: #87ceeb; /* 스카이블루 색상 */
-  padding: 10px 20px;
+  background-color: #28844F; /* 변경된 색상 */
+  padding: 20px 40px; /* 헤더 높이를 늘리기 위해 상하 패딩을 더 추가 */
 }
 
 .navbar {
@@ -19,13 +19,13 @@
 }
 
 .menu-icon {
-  font-size: 1.5rem;
+  font-size: 2rem; /* 아이콘 크기 증가 */
   color: white;
   cursor: pointer;
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 2.5rem; /* 로고 텍스트 크기 증가 */
   font-weight: bold;
   color: white;
   text-transform: uppercase;
@@ -39,16 +39,16 @@
 .right-menu {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
 .icon {
-  font-size: 1.5rem;
+  font-size: 2rem; /* 아이콘 크기 증가 */
   color: white;
   cursor: pointer;
   transition: color 0.3s;
 }
 
 .icon:hover {
-  color: #00bfff; /* 더 진한 스카이블루 */
+  color: #1e683b; /* 더 진한 색상 */
 }
