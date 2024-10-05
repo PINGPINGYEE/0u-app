@@ -7,7 +7,6 @@ function HomePage() {
   return (
     <div className="homepage">
       <div className="intro-banner">
-        <FaTree className="tree-icon" /> {/* 나무 모양 아이콘 */}
         <p className="intro-description" style={{ color:'black' }}>
           오늘 <span className="highlight">3000명</span> 사람들이 동참했어요.
         </p>

@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaShoppingCart, FaBell, FaUser } from 'react-icons/fa'; // 아이콘 사용
+import { FaBars } from 'react-icons/fa'; // 햄버거 메뉴 아이콘 사용
 import '../Header.css';
 import '../App.css';
+import Alarm from '../image/alarm-icon.png';
+import Cart from '../image/cart-icon.png';
+import Profile from '../image/profile-icon.png';
 
 function Header() {
   return (
@@ -15,9 +18,9 @@ function Header() {
           <Link to="/">0U</Link>
         </div>
         <div className="right-menu">
-          <FaShoppingCart className="icon" />
-          <FaBell className="icon" />
-          <FaUser className="icon" />
+          <img src={Cart} alt="Cart" className="icon" />
+          
+          <img src={Profile} alt="Profile" className="icon" />
         </div>
       </nav>
     </header>
