@@ -1,5 +1,10 @@
 /* HomePage.css */
 
+/* 전체 페이지는 좌우 스크롤이 불가능하게 설정 */
+body, html {
+  overflow-x: hidden; /* 좌우 스크롤을 비활성화 */
+}
+
 .homepage {
   display: flex;
   flex-direction: column;
@@ -14,54 +19,142 @@
   padding-top: 20px;
 }
 
-.intro-banner {
+.magazine-banner {
+  width: 100%;
   display: flex;
-  align-items: center;
-  gap: 15px;
-  margin: 20px 0;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.tree-icon {
-  font-size: 3rem; /* 아이콘 크기 설정 */
-  color: #ffffff; /* 아이콘 색상을 흰색으로 설정 */
+.magazine-image {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.intro-description {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
+.recommendation-section {
+  width: 100%;
+  margin-top: 10px;
+  padding: 0 20px;
 }
 
-.highlight {
-  color: #32CD32; /* 거래량 강조 색상을 밝은 초록색으로 설정 */
-}
-
-.search-section {
-  margin-top: 30px; /* 검색창 위 여백 */
+.recommendation-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 15px; /* 버튼과 입력 필드 사이의 여백 */
+  margin-bottom: -18px; /* 더보기와 리스트 간격을 더 줄임 */
+  margin-right: 10px; /* 더보기 오른쪽 여백 추가 */
 }
 
-.search-input {
-  padding: 15px; /* 입력 필드 크기 적당히 증가 */
-  border-radius: 5px; /* 모서리를 살짝 둥글게 설정 */
-  border: 1px solid #ccc; /* 이전처럼 회색 테두리 추가 */
-  width: 350px; /* 넓이를 적당히 설정 */
-  font-size: 1.2rem; /* 글씨 크기 */
+.recommendation-header h2 {
+  color: rgb(0, 0, 0);
+  margin-left: 10px; /* 추천 상품 왼쪽 여백 추가 */
 }
 
-.search-button {
-  padding: 15px 25px; /* 버튼 크기 적당히 증가 */
-  background-color: #000000; /* 버튼 색상 검정색으로 변경 */
-  color: white; /* 버튼 텍스트 색상 흰색으로 변경 */
-  border: none;
-  border-radius: 5px; /* 모서리를 살짝 둥글게 설정 */
-  font-size: 1.2rem; /* 글씨 크기 */
+.view-more-link {
+  color: #6e7479; /* 링크 색상 */
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-.search-button:hover {
-  background-color: #444444; /* 호버 시 더 진한 회색으로 변경 */
+.view-more-link:hover {
+  color: #212529; /* 호버 시 색상 변경 */
+}
+
+.recommendation-list {
+  display: flex;
+  overflow-x: auto; /* 가로 스크롤 가능하게 설정 */
+  gap: 8px; /* 상품 간격을 더욱 좁게 설정 */
+  padding-bottom: 5px; /* 상품 리스트 아래 여백을 더 줄임 */
+}
+
+.recommendation-item {
+  flex: 0 0 auto;
+  width: 150px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.recommendation-item p {
+  margin-top: 5px; /* 상품 제목 위 간격을 조금 줄임 */
+  color: black;
+}
+
+.recommendation-item-link {
+  text-decoration: none; /* 하이퍼링크 밑줄 제거 */
+  color: inherit; /* 기본 텍스트 색상 유지 */
+}
+
+.recommendation-item-link:hover .recommendation-item {
+  background-color: #f0f0f0; /* 마우스 올렸을 때 배경색 변경 */
+  color: #6e7479; /* 텍스트 색상 변경 */
+}
+
+.recommendation-item {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 280px; /* 고정된 높이 설정 */
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s; /* 배경색과 텍스트 색상에 대한 트랜지션 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 내용이 균등하게 배치되도록 */
+}
+
+.recommendation-item p {
+  margin-top: 5px;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+
+.recommendation-image {
+  width: 100%;
+  height: 100px; /* 고정된 이미지 높이 설정 */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.price {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.rental-period {
+  color: #555;
+  font-size: 0.8rem;
+}
+
+.heart-icon {
+  font-size: 1.5rem;
+  color: grey;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.heart-icon.liked {
+  color: red;
+}
+
+.heart-icon:hover {
+  color: #ff4d4d;
 }

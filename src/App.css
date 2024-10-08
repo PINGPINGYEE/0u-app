@@ -37,12 +37,12 @@
   }
 }
 
-/* src/App.css */
-body {
-  font-family: 'Sunflower', sans-serif;
+/* 기본 글꼴을 Gothic A1로 설정 */
+body, html {
+  font-family: 'Gothic A1', sans-serif;
 }
 
 /* 추가로 다른 요소들도 스타일링 */
 h1, h2, h3, h4, h5, h6, p, a, li, button {
-  font-family: 'Sunflower', sans-serif;
+  font-family: 'Gothic A1', sans-serif;
 }
