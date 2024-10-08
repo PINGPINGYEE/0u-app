@@ -39,10 +39,13 @@ function ProductDetailPage() {
         <div className="product-details">
           <h1>{product.title}</h1>
           <p className="price">{product.price}</p>
-          <p>{product.description}</p>
           <p><strong>판매자:</strong> {product.seller}</p>
           <p><strong>대여기간:</strong> {product.rentalPeriod}</p> {/* 대여 기간 표시 */}
         </div>
+      </div>
+
+      <div className="product-description">
+        <p>{product.description}</p>
       </div>
 
       <div className="purchase-section">
