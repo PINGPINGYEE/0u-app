@@ -1,0 +1,47 @@
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #6e7479;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #212529;
+}
+
+p {
+  color: green;
+  font-weight: bold;
+}
+
+.signup-page p {
+  margin-top: 10px;
+  color: green;
+  font-weight: bold;
+}
