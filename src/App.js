@@ -17,7 +17,7 @@ function AppContent({ isLoggedIn, setIsLoggedIn }) {
       {!isAuthPage ? (
         <Header />
       ) : (
-        <div className="auth-logo">0u</div>
+        <div className="auth-logo">0U</div>
       )}
       <Routes>
         <Route
